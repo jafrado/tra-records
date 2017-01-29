@@ -1,0 +1,25 @@
+Class,Type,Rocket Motor,Total Impulse,Name,Altitude,Altimeters (include GPS model if > 30K),Date,Location,GPS URL,Image URL,Altimeter URL,Notes,Historical
+Single,Research,H-29mm,320,Chet Geyer,"8,288",Adept Alt-S1,8/1/2003,,,,,,
+Single,Research,M-75mm-over-26in,10240,Bob Yanecek,"7,982",MissleWorks RRC2X,8/20/2005,,,,,,
+Single,Research,K-54mm -12in-24in,2560,Tony Alcocer,"18,655",G-Wiz DLX800,6/20/2003,,,,,,
+Single,Research,K-54mm -12in-24in,2560,Tony Alcocer,"16,932",G-Wiz DLX800,8/1/2003,,,,,,
+Single,Research,K-54mm -12in-24in,2560,Tony Alcocer,"14,837",G-Wiz DLX800,6/20/2003,,,,,,
+Single,Research,L-75mm-under-26in,5120,Tony Alcocer,"15,945","G-Wiz 800, RRC2X",8/1/2003,,,,,,
+Single,Research,M-75mm-over-26in,10240,Tony Alcocer,"19,808","G-Wiz, RRC2X",6/20/2003,,,,,,
+Single,Research,O-98mm-over-48in,40960,Steven Heller,"68,606",Telemetrum,7/3/2016,"Blackrock, Nevada",,"http://www.realflightsystems.com/techpubs/data/TRA-Records/other/Steven_Heller-O-Record-full-res.jpg
+",,Case Bonded O10000,
+Single,Research Group,J-54mm-under-12in,1280,"John DeMar,Michelle Zeisset,Lee Powell","8,958",Blacksky AltACC-2A,9/28/2007,,,,,,
+Single,Research Group,L-54mm-over-24in,5120,"David Raimondi,James Marino","23,267",G-Wiz MC2,9/25/2006,,,,,,
+Single,Research Group,L-75mm-under-26in,5120,"James Marino,Bill Townsend","17,634",G-Wiz MC ,9/11/2004,,,,,,
+Single,Research Group,M-75mm-over-26in,10240,"Robin Meredith,Ron Zeppin,Mark Clark","35,223","MissileWorks RRC2X, MissleWorks RRC2X",9/27/2008,"Blackrock, NV",,http://www.realflightsystems.com/techpubs/data/TRA-Records/other/RonZeppen_RobinMeredith.jpg,,,
+Single,Research Group,N-98mm-29in-48in,20480,"Jim Jarvis,Pat Gordzelik","31,580","G-Wiz MC, Perfectflite HA-45",5/26/2007,"Wayside, Texas",,,,Wayside White,
+Single,Research Group,O-6in,40960,"Gerald Meux Jr.,Guy Hardy","23,512","Stratologger, Marsa 54, GPS-1",9/22/2013,"Blackrock, NV",http://www.realflightsystems.com/techpubs/data/TRA-Records/other/CircusPeanut.log,http://realflightsystems.com/wordpress/wp-content/uploads/2013/12/IMG_1345A.jpg,,,
+Single,Research Group,O-6in,40960,"James Dougherty,Kimball Tucker","38,807","G-Wiz HCX, G-Wiz LCX",9/25/2010,"BALLS19
+Blackrock Nevada",,http://realflightsystems.com/techpubs/data/TRA-Records/2010/M150/balls-m150-6.jpg,,"Performance Rocketry Mongoose 150 on Kimball Tuckers’s High Aluminum O5150; 
+35 lb rocket (empty), 52 lb motor with four 9 lb grains; flight weight 107 pounds. 
+Nominal flight, Mach 2 at 9,627' AGL, landed downrange 2 miles. 
+See also: http://www.youtube.com/watch?v=zXIjE5VFOks",
+Single,Research Group,Q-Over-6in,136000,"Scott Hertel, Guy Hardy","77,484","MARSA54, RFS GPS-1",9/24/2016,"BALLS25, 
+Blackrock Nevada",http://www.realflightsystems.com/techpubs/data/TRA-Records/other/Scott-Hertel-RFS-GPS1-Q11100.kmz,"http://www.realflightsystems.com/techpubs/data/TRA-Records/other/8URkt.jpg,
+http://www.realflightsystems.com/techpubs/data/TRA-Records/other/8URKT-GE-GPS1-altitude.jpg",,"Hertel/Hardy Q11100 - Rocket 8"" Diameter, 206"" long, Empty weight 183lbs, 350lbs flight weight
+See also: :https://www.youtube.com/watch?v=5MT9irJSDf8",

@@ -1,0 +1,53 @@
+table tbody {
+    counter-reset: sortabletablescope;
+}
+table thead tr::before {
+    content: "";
+    display: table-cell;
+}
+table tbody tr::before {
+    content: counter(sortabletablescope);
+    counter-increment: sortabletablescope;
+    display: table-cell;
+}
+th {
+    font-size: 100%;
+}
+
+table, th, td {
+ border: 1px solid black;
+}
+
+table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   border: 1px solid black;
+   width: 100%;
+}
+th {
+    height: 32px; 
+    text-align: center; 
+    background-color: #7f7f7f;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+td {
+    height: 32px; 
+    text-align: center; 
+    border: 1px solid black;
+    text-align: left;
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Sortable tables */
+table thead {
+     background-color: #bbbbbb;
+     color: #000000;
+     font-weight: bold;
+    cursor: default;
+}
