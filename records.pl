@@ -57,6 +57,9 @@ system "mkdir -p $DATADIR";
 #system "cp sorttable.js $TOPDIR";
 system "cp gs_sortable.js $TOPDIR";
 system "cp index.html $TOPDIR";
+system "cp events.html $TOPDIR";
+system "cp approved-gps.html $TOPDIR";
+system "cp TRA-Records-Application-08.13.2016.pdf $TOPDIR";
 system "cp style.css $TOPDIR";
 system "cp electronics.png $TOPDIR";
 #system "cp -fr jquery-ui-1.12.1.custom $TOPDIR";
@@ -395,7 +398,7 @@ print $fh "<link rel=\"stylesheet\" href=\"style.css\">\n";
 print $fh "</head>\n";
 print $fh "<body>\n";
 print $fh "<TITLE> Tripoli Records - ", ucfirst $record_class, "</TITLE>\n";
-print $fh "<A HREF=\"/\"><IMG BORDER=0 SRC=\"http://www.tripoli.org/Portals/1/Images/Tripoli/tripoli_logosp75.png\"></A>\n";
+print $fh "<A HREF=\"http:\/\/www.tripoli.org/\"><IMG BORDER=0 SRC=\"http://www.tripoli.org/Portals/1/Images/Tripoli/tripoli_logosp75.png\"></A>\n";
 print $fh "<H1> Altitude Records - ", ucfirst $record_class, "</H1>\n";
 print $fh "<input type='button' name='action' value='By Altitude' onClick='tsDraw(\"4D\", \"records_table\"); tsDraw(\"4D\");'>  <input type='button' name='action' value='By Impulse' onClick='tsDraw(\"3D\", \"records_table\"); tsDraw(\"3D\");'>\n"; 
 
