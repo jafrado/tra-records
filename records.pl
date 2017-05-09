@@ -8,6 +8,7 @@ use Time::localtime;
 use Image::Magick;
 use CGI qw(escapeHTML);
 use URI::Find;
+use Scalar::Util qw(looks_like_number);
 
 # Format of Datafile
 #Class,Type,Rocket Motor,Total Impulse,Name,Altitude,Altimeters (include GPS model if > 30K),Date,Location,GPS URL,Image URL,Altimeter URL, Notes, Historical
@@ -223,9 +224,57 @@ sub make_thumbnail{
     # else we use the same image for the web image
 
     # and we make a mini 128x128 icon
-
-
 }
+
+sub impulse_letter{
+    my $ti = shift;
+
+    if (looks_like_number($ti)) { 
+	if ( ($ti >= 160) && ($ti <= 320 )) { 
+	    return "H";
+	}
+	elsif ( ($ti > 320) && ($ti <= 640) ) { 
+	    return "I";
+	}
+	elsif ( ($ti > 640) && ($ti <= 1280) ) { 
+	    return "J";
+	}
+	elsif ( ($ti > 1280) && ($ti <= 2560) ) { 
+	    return "K";
+	}
+	elsif ( ($ti > 2560) && ($ti <= 5120) ) { 
+	    return "L";
+	}
+	elsif ( ($ti > 5120) && ($ti <= 10240) ) { 
+	    return "M";
+	}
+	elsif ( ($ti > 10240) && ($ti <= 20480) ) { 
+	    return "N";
+	}
+	elsif ( ($ti > 20480) && ($ti <= 40960) ) { 
+	    return "O";
+	}
+	elsif ( ($ti > 40960) && ($ti <= 81920) ) { 
+	    return "P";
+	}
+	elsif ( ($ti > 81920) && ($ti <= 163840) ) { 
+	    return "Q";
+	}
+	elsif ( ($ti > 163840) && ($ti <= 327680) ) { 
+	    return "R";
+	}
+	elsif ( ($ti > 327680) && ($ti <= 655360) ) { 
+	    return "S";
+	}
+	elsif ( ($ti > 655360) && ($ti <= 1310720) ) { 
+	    return "T";
+	}
+	return "Over-T";
+    }
+    return "NAN";
+}
+
+
 
 sub commify {
   local $_ = shift;
@@ -417,7 +466,15 @@ print $fh "<th>Details</th>\n</tr>\n</thead>\n";
 for my $r (@rows) {
     $csv->combine(@$r);
     my $cnt = 0;
+
+    # Non complex, use first letter of the motor for class
     my $md = substr($r->[MOTOR], 0, 1);
+
+    # Complex, use letter for total impulse
+    if ($record_class eq "complex" || $record_class eq "Complex"){
+	$md = impulse_letter($r->[TOTAL_IMPULSE]);
+#	print("Complex-$md ($r->[TOTAL_IMPULSE])\n");
+    }
     print $fh "<tr>\n";
 #Class-Type-MOTOR[0] Motor Altitude Name Data [Remaining Details]w
 #    print "H:$header->[CLASS]\n";
@@ -507,7 +564,7 @@ print $fh "<hr>\n";
 print $fh "<H6> Last updated:", ctime(time()), "</H6>\n";
 print $fh "<script type=\"text/javascript\">\n";
 print $fh "<!--\n";
-print $fh "var TSort_Data = new Array ('records_table', '','','','n','n','d','','');\n";
+print $fh "var TSort_Data = new Array ('records_table', '','s','','n','n','d','','');\n";
 print $fh "var TSort_Initial = new Array ('3D', '4D');\n";
 print $fh "tsRegister();\n";
 print $fh "// -->\n</script>\n";
