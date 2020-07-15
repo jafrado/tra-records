@@ -230,6 +230,12 @@ sub impulse_letter{
     my $ti = shift;
 
     if (looks_like_number($ti)) { 
+	if ( ($ti >= 0) && ($ti < 80 )) { 
+	    return "F";
+	}
+	if ( ($ti >= 80) && ($ti < 160 )) { 
+	    return "G";
+	}	
 	if ( ($ti >= 160) && ($ti <= 320 )) { 
 	    return "H";
 	}
