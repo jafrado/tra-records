@@ -1,11 +1,12 @@
 Class,Type,Rocket Motors,Total Impulse,Name,Altitude,Altimeters (include GPS model if > 30K),Date,Location,GPS URL,Image URL,Altimeter URL,Notes,Historical
-Complex,Clustered,F25 / F10,160,Douglas Gamber,"7,672",Adept Alt-S1,10/27/2002,,,,,,
-Complex,Clustered,G118 / G118,318,Sean Serell,"9,200",MissleWorks RRC2,8/1/2009,,,,,,
+Complex,Clustered,F42/F42/F42,159,Steve Boetto,"2,161",Easy Mini,12/20/2020,"TTRA, Plant City, FL",,"http://www.realflightsystems.com/techpubs/data/TRA-Records/2020/Boetto/Boetto-G-Cluster-1.jpg,http://www.realflightsystems.com/techpubs/data/TRA-Records/2020/Boetto/Boetto-G-Cluster2.jpg",,,
+Complex,Multi-Stage,F25 / F10,160,Douglas Gamber,"7,672",Adept Alt-S1,10/27/2002,,,,,,
+Complex,Multi-Stage,G118 / G118,318,Sean Serell,"9,200",MissleWorks RRC2,8/1/2009,,,,,,
 Complex,Clustered,G25x2 / F50,320,Mark Herdon,"2,348",Adept Alt05-50K,4/8/2000,,,,,,
-Complex,Clustered,I435 / I284,1172,Mike Brest,"18,408",R-Das,9/26/2003,,,,,,
+Complex,Multi-Stage,I435 / I284,1172,Mike Brest,"18,408",R-Das,9/26/2003,,,,,,
 Complex,Clustered,J415 /J570x3,4460,Dirk & Erik Gates,"8,130",Blacksky AltAcc2A,10/14/2000,,,,,,
 Complex,Clustered,K550x5 / K185x2,11500,Mark Canepa,"10,896",Olsen Electronics M2,10/15/2000,,,,,,
-Complex,Clustered,N2500 / N2000,27766,Adrian Carbine,"40,098",Adept Alts60K,9/24/2005,,,,,,
+Complex,Multi-Stage,N2500 / N2000,27766,Adrian Carbine,"40,098",Adept Alts60K,9/24/2005,,,,,,
 Complex,Clustered,M1315x3 / M1939,29440,Tom Rouse,"25,406","G-Wiz, RDAS",8/25/2001,"Blackrock, Nevada",,http://www.realflightsystems.com/techpubs/data/TRA-Records/other/TomRouse-3N2M-1600.jpg,,,
 Complex,Multi-Stage,F44W/E6,79.26,Steve Boetto,"5,883",Easy Mini,6/20/2020,"TTRA, Plant City, FL",,http://www.realflightsystems.com/techpubs/data/TRA-Records/2020/Boetto/Boetto-F-Complex-2020.jpg,,,
 Complex,Multi-Stage,H399 / I204,630,Evan Brown,"15,101",Raven-3,6/24/2017,"URRG, Potter, NY",,"http://www.realflightsystems.com/techpubs/data/TRA-Records/2017/evan-brown/Do-15.jpg,http://www.realflightsystems.com/techpubs/data/TRA-Records/2017/evan-brown/Do-16.jpg,http://www.realflightsystems.com/techpubs/data/TRA-Records/2017/evan-brown/Do-16a.jpg",,"
