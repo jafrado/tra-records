@@ -6,3 +6,4 @@
 ./records.pl TripoliRecords2016-Handicapped.csv handicapped
 ./millions.pl TripoliRecords2016-Millions.csv millions
 
+cp -f approved-gps.html events.html index.html records

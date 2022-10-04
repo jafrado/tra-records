@@ -4,7 +4,7 @@
 </head>
 <body>
 <TITLE> Tripoli Approved GPS Units for Competition Events</TITLE>
-<A HREF="http://www.tripoli.org/"><IMG BORDER=0 SRC="http://www.tripoli.org/Portals/1/Images/Tripoli/tripoli_logosp75.png"></A>
+<A HREF="http://www.tripoli.org/"><IMG BORDER=0 SRC="http://tripoli-records.org/wp-content/uploads/2016/10/triplogo_181x90.jpg"></A>
 
 <H3>Approved GPS units for TRA altitude competition events</H3>
 <div><span style="font-size: 18px;"><strong><br />
@@ -70,7 +70,7 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td>UFC-3 GPS-2 module (with NovAtel OEM615V GPS)</td>
+            <td>UFC-3 GPS-2 module (with Novatel OEM615V GPS)</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -146,6 +146,20 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
+            <td colspan="2">MicroElectronika ( <a href="http://www.mikroe.com/">http://www.mikroe.com</a> )</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>MIKROE-3922 GNSS 7-Click with u-blox 9 GPS</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>	
+        <tr>
             <td colspan="2">Multitronix ( <a href="http://www.multitronix.com/">http://www.multitronix.com</a> )</td>
             <td>&nbsp;</td>
         </tr>
@@ -174,12 +188,61 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
+
+        <tr>
+            <td colspan="2">Sparkfun (<a href="http://sparkfun.com/">http://www.sparkfun.com/</a>) </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>SparkFun GPS Breakout - NEO-M9N u-blox 9 GPS, any Antenna variant<br />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
         <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+
+	
     </tbody>
 </table>
-<p>&nbsp;</p>
+
+<H3>Requirements for TRA Approved GPS Altitude Reporting devices </H3>
+<ul>
+  <li> GPS Altitude Reporting device is manufactured by an Original Equipment Manufacturer (OEM). </li>
+<ul>  <li> OEM is accountable for the design and implementation of the product and support of the same.</li>
+  <li> Device/Unit needs to be available for purchase from an OEM as a completed and verified system. </li></ul>
+  <li> OEM Unit uses and provides documented GPS chipset manufactured by a GPS chipset OEM.</li>
+  <li>OEM shall make the GPS chipset device datasheet public</li>
+  <li> For the OEM GPS chipset, it is mandatory to have a documented 3D dynamic mode and mandatory that this mode is enabled otherwise the altitude data is not trustworthy.</li>
+  <ul> <li> The performance and operational limits of the GPS chipset (or receiver core) shall be provided from the manufacturer datasheet. </li> </ul>
+  <li> Native GPS chipset output (e.g. NMEA, UBX, GPX, Proprietary, etc) is required (e.g. a GPS logfile).
+    <ul><li> In the absence of native GPS logfile output, OEM Device/Unit shall provide minimum required data (MRD), as below in CSV format:
+	<ul><li>Latitude, Longitude, Altitude (LLA) </li>
+	  <li> GPS Dilution of Precision (DOP) or Satellites In View (SIV)</li>
+	    <li> Fix-Type,Time-UTC and GNSS constellation information is encouraged and desirable but not required.</li>
+        </ul>
+  <li> At least three (3) datafiles from three (3) flights of 10K-80Kft that compares with barometric or GPS data is required to qualify.</li></ul>
+  <li> All ITAR and export limits for the specified GPS chipset OEM shall be followed. </li>
+  <ul>  <li> Modification of OEM GPS chipset firmware binary images or HW behaviour is forbidden. </li>
+    <li> Tampering, modifying, or circumventing features or normal operational modes of the OEM GPS chipset in HW or SW is forbidden.
+</ul>
+</ul>
+
+<H3> Approved OEM GPS Chipsets and their Operational Limits</H3>
+<ul>
+  <li> uBlox <a href="https://content.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_UBX-15031086.pdf">NEO-M8N</a>, <A HREF="https://content.u-blox.com/sites/default/files/products/documents/NEO-7_DataSheet_%28UBX-13003830%29.pdf"> NEO-M7 </a>, <A href="https://assets.componentsense.com/images/pdfs/1397641215210_LEA-4%20Datasheet.pdf">LEA-4</a>,<A href="https://image.dfrobot.com/image/data/TEL0044/LEA-5_Prod_Summary.pdf">LEA-5</a>,<A Href="https://content.u-blox.com/sites/default/files/products/documents/LEA-6_DataSheet_%28UBX-14044797%29.pdf">LEA-6</a> <ul><li> Aircraft Dynamic Model: 4g, Mach 1.5 Horizontal & Vertical (500 m/s), 164,042’ MSL (50km) max altitude</li></ul>
+  <li> uBlox <A HREF="https://content.u-blox.com/sites/default/files/NEO-M9N_Integrationmanual_UBX-19014286.pdf?hash=undefined&_ga=2.19118779.22917568.1664257302-116227122.1658209591">NEO-M9N</a> <ul><li> Aircraft Dynamic Model: 4g, Mach 60 Vertical (20km/sec), Mach 1.5 Horizontal (500 m/s), 262,467’ MSL (80km) max altitude</li></ul>
+  <li> <a href="https://www.sparkfun.com/datasheets/GPS/Lassen%20iQ_Reference%20Manual.pdf"> Trimble Lassen-IQ </a> <ul><li>4g, Mach 1.5 Horizontal and Vertical (500 m/s), 59,055' MSL (18km) max altitude</li></ul>
+  <li> <a href="https://novatel.com/support/previous-generation-products-drop-down/previous-generation-products/oem615-receiver">Novatel OEM-615V</a>/<A href="https://novatel.com/products/receivers/gnss-gps-receiver-boards/oem7600">OEM-7</a><ul><li> 20g, Mach 1.5 Horizontal and Vertical (515 m/s) 50km (OEM)</li><li>Unlimited speed and velocity (with license and unlock code)</li></ul>
+</ul>
+
+
 <br />

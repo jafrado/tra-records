@@ -453,7 +453,7 @@ print $fh "<link rel=\"stylesheet\" href=\"style.css\">\n";
 print $fh "</head>\n";
 print $fh "<body>\n";
 print $fh "<TITLE> Tripoli Records - ", ucfirst $record_class, "</TITLE>\n";
-print $fh "<A HREF=\"http:\/\/www.tripoli.org/\"><IMG BORDER=0 SRC=\"http://www.tripoli.org/Portals/1/Images/Tripoli/tripoli_logosp75.png\"></A>\n";
+print $fh "<A HREF=\"http:\/\/www.tripoli.org/\"><IMG BORDER=0 SRC=\"http://tripoli-records.org/wp-content/uploads/2016/10/triplogo_181x90.jpg\"></A>\n";
 print $fh "<H1> Altitude Records - ", ucfirst $record_class, "</H1>\n";
 print $fh "<input type='button' name='action' value='By Altitude' onClick='tsDraw(\"4D\", \"records_table\"); tsDraw(\"4D\");'>  <input type='button' name='action' value='By Impulse' onClick='tsDraw(\"3D\", \"records_table\"); tsDraw(\"3D\");'>\n"; 
 
